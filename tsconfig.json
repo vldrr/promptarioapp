@@ -4,7 +4,10 @@
     "strict": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
-  "include": ["App.tsx", "src"]
+  "include": ["App.tsx", "src", "*.ts", "*.tsx"]
 }

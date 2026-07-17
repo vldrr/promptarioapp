@@ -1,4 +1,4 @@
-import { Prompt } from '../types';
+import { Prompt } from './types';
 
 /**
  * Validação e sanitização do banco de prompts.
@@ -26,6 +26,7 @@ export function validatePrompts(raw: unknown): Prompt[] {
   const valid: Prompt[] = [];
 
   for (const item of list) {
+    if (item === null || typeof item !== 'object') continue;
     const p = item as Partial<Prompt>;
     const ok =
       isNonEmptyString(p.id) &&

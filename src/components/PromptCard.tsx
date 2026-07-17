@@ -1,8 +1,8 @@
 import React, { memo, useEffect, useRef } from 'react';
 import { Animated, Pressable, StyleSheet, Text, View } from 'react-native';
 import { useTheme } from '../context/ThemeContext';
-import { fonts, radius } from '../theme';
-import { Prompt } from '../types';
+import { fonts, radius } from '../utils/theme';
+import { Prompt } from '../utils/types';
 import { ToolBadge } from './Common';
 
 interface Props {
@@ -50,7 +50,7 @@ export const PromptCard = memo(
           style={({ pressed }) => [
             styles.card,
             { backgroundColor: colors.surface, borderColor: colors.border },
-            pressed && { backgroundColor: colors.surfaceHi },
+            pressed && { backgroundColor: colors.surfaceHi, transform: [{ scale: 0.99 }] },
           ]}
         >
           <View style={styles.top}>
@@ -65,6 +65,7 @@ export const PromptCard = memo(
               accessibilityLabel={
                 favorito ? 'Remover dos favoritos' : 'Adicionar aos favoritos'
               }
+              style={({ pressed }) => [pressed && { opacity: 0.7 }]}
             >
               <Text
                 style={{ fontSize: 22, color: favorito ? colors.star : colors.textDim }}
@@ -96,10 +97,19 @@ export const PromptCard = memo(
 );
 
 const styles = StyleSheet.create({
-  card: { borderRadius: radius.card, borderWidth: 1, padding: 16 },
+  card: {
+    borderRadius: radius.card,
+    borderWidth: 1,
+    padding: 16,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.08,
+    shadowRadius: 4,
+    elevation: 2,
+  },
   top: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   categoria: { fontFamily: fonts.bold, fontSize: 10, letterSpacing: 1.2 },
-  titulo: { fontFamily: fonts.extraBold, fontSize: 16, marginTop: 6 },
+  titulo: { fontFamily: fonts.extraBold, fontSize: 16, marginTop: 6, lineHeight: 22 },
   descricao: { fontFamily: fonts.medium, fontSize: 13, lineHeight: 19, marginTop: 6 },
   bottom: {
     flexDirection: 'row',

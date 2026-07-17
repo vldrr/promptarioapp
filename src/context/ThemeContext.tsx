@@ -7,8 +7,8 @@ import React, {
   useState,
 } from 'react';
 import { useColorScheme } from 'react-native';
-import { palettes } from '../theme';
-import { Palette, ThemeMode } from '../types';
+import { palettes } from '../utils/theme';
+import { Palette, ThemeMode } from '../utils/types';
 import { loadJSON, saveJSON, StorageKeys } from '../utils/storage';
 
 /**

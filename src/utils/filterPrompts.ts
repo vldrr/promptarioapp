@@ -1,4 +1,4 @@
-import { Prompt, SortMode } from '../types';
+import { Prompt, SortMode } from './types';
 
 /**
  * Filtro e ordenação em função pura — sem estado, sem React.

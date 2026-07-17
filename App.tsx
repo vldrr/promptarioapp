@@ -1,6 +1,15 @@
 import React, { useCallback, useMemo, useState } from 'react';
-import { FlatList, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
+import {
+  FlatList,
+  Platform,
+  SafeAreaView,
+  ScrollView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
+import { StatusBar as ExpoStatusBar } from 'expo-status-bar';
 import {
   useFonts,
   Montserrat_500Medium,
@@ -19,8 +28,8 @@ import { useDebounce } from './src/hooks/useDebounce';
 import { useFavorites, useRecents } from './src/hooks/usePersisted';
 import { validatePrompts } from './src/utils/validation';
 import { filterPrompts } from './src/utils/filterPrompts';
-import { fonts } from './src/theme';
-import { Prompt, SortMode } from './src/types';
+import { fonts } from './src/utils/theme';
+import { Prompt, SortMode } from './src/utils/types';
 
 /**
  * PromptÁrio — banco de prompts offline.
@@ -106,73 +115,76 @@ function Main() {
   const keyExtractor = useCallback((item: Prompt) => item.id, []);
 
   return (
-    <View style={[styles.root, { backgroundColor: colors.bg }]}>
-      <StatusBar style={mode === 'dark' ? 'light' : 'dark'} />
-      <Header />
-      <SearchBar
-        value={busca}
-        onChange={setBusca}
-        soFavoritos={soFavoritos}
-        onToggleFavoritos={toggleSoFavoritos}
-      />
+    <SafeAreaView style={[styles.safeArea, { backgroundColor: colors.bg }]}>
+      <ExpoStatusBar style={mode === 'dark' ? 'light' : 'dark'} />
+      <View style={[styles.root, { backgroundColor: colors.bg }]}>
+        <Header />
+        <SearchBar
+          value={busca}
+          onChange={setBusca}
+          soFavoritos={soFavoritos}
+          onToggleFavoritos={toggleSoFavoritos}
+        />
 
-      {/* Categorias */}
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        style={styles.chipsScroll}
-        contentContainerStyle={styles.chips}
-      >
-        {categorias.map((c) => (
-          <Chip key={c} label={c} active={categoria === c} onPress={setCategoria} />
-        ))}
-      </ScrollView>
+        {/* Categorias */}
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          style={styles.chipsScroll}
+          contentContainerStyle={styles.chips}
+        >
+          {categorias.map((c) => (
+            <Chip key={c} label={c} active={categoria === c} onPress={setCategoria} />
+          ))}
+        </ScrollView>
 
-      {/* Ferramentas (multi-seleção) + ordenação */}
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        style={styles.chipsScroll}
-        contentContainerStyle={styles.chips}
-      >
-        {todasFerramentas.map((f) => (
-          <Chip
-            key={f}
-            label={f}
-            active={ferramentas.includes(f)}
-            onPress={toggleFerramenta}
-          />
-        ))}
-        <View style={[styles.divider, { backgroundColor: colors.border }]} />
-        {Object.entries(SORT_LABELS).map(([label, value]) => (
-          <Chip key={label} label={label} active={sort === value} onPress={escolherSort} />
-        ))}
-      </ScrollView>
+        {/* Ferramentas (multi-seleção) + ordenação */}
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          style={styles.chipsScroll}
+          contentContainerStyle={styles.chips}
+        >
+          {todasFerramentas.map((f) => (
+            <Chip
+              key={f}
+              label={f}
+              active={ferramentas.includes(f)}
+              onPress={toggleFerramenta}
+            />
+          ))}
+          <View style={[styles.divider, { backgroundColor: colors.border }]} />
+          {Object.entries(SORT_LABELS).map(([label, value]) => (
+            <Chip key={label} label={label} active={sort === value} onPress={escolherSort} />
+          ))}
+        </ScrollView>
 
-      {/* Contador de resultados — feedback + região viva p/ leitores de tela */}
-      <Text
-        style={[styles.count, { color: colors.textDim }]}
-        accessibilityLiveRegion="polite"
-      >
-        {filtrados.length} {filtrados.length === 1 ? 'prompt' : 'prompts'}
-      </Text>
+        {/* Contador de resultados — feedback + região viva p/ leitores de tela */}
+        <Text
+          style={[styles.count, { color: colors.textDim }]}
+          accessibilityLiveRegion="polite"
+        >
+          {filtrados.length} {filtrados.length === 1 ? 'prompt' : 'prompts'}
+        </Text>
 
-      <FlatList
-        data={filtrados}
-        keyExtractor={keyExtractor}
-        renderItem={renderItem}
-        contentContainerStyle={styles.list}
-        ListEmptyComponent={<EmptyState />}
-        // Tuning de virtualização p/ listas de cards de altura variável:
-        initialNumToRender={8}
-        maxToRenderPerBatch={10}
-        windowSize={7}
-        removeClippedSubviews
-        keyboardShouldPersistTaps="handled"
-      />
+        <FlatList
+          data={filtrados}
+          keyExtractor={keyExtractor}
+          renderItem={renderItem}
+          contentContainerStyle={styles.list}
+          ListEmptyComponent={<EmptyState />}
+          // Tuning de virtualização p/ listas de cards de altura variável:
+          initialNumToRender={8}
+          maxToRenderPerBatch={10}
+          windowSize={7}
+          removeClippedSubviews={Platform.OS !== 'web'}
+          keyboardShouldPersistTaps="handled"
+          keyboardDismissMode="on-drag"
+        />
 
-      <PromptModal prompt={selecionado} onClose={fecharPrompt} onCopied={registrarUso} />
-    </View>
+        <PromptModal prompt={selecionado} onClose={fecharPrompt} onCopied={registrarUso} />
+      </View>
+    </SafeAreaView>
   );
 }
 
@@ -185,7 +197,11 @@ export default function App() {
 
   // Splash simples enquanto as fontes carregam (evita flash de fonte errada).
   if (!fontsLoaded) {
-    return <View style={{ flex: 1, backgroundColor: '#0F172A' }} />;
+    return (
+      <View style={{ flex: 1, backgroundColor: '#0F172A' }}>
+        <StatusBar barStyle="light-content" backgroundColor="#0F172A" />
+      </View>
+    );
   }
 
   return (
@@ -198,7 +214,8 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  root: { flex: 1, paddingTop: 56 },
+  safeArea: { flex: 1 },
+  root: { flex: 1 },
   // flexGrow: 0 + altura fixa: sem isso, o react-native-web colapsa o
   // ScrollView horizontal para altura 0 e as fileiras se sobrepõem.
   chipsScroll: { flexGrow: 0, height: 48 },

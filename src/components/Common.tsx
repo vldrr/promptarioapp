@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { useTheme } from '../context/ThemeContext';
-import { fonts, MIN_TOUCH, radius, toolColors } from '../theme';
+import { fonts, MIN_TOUCH, radius, toolColors } from '../utils/theme';
 
 /** Badge colorida da ferramenta de IA. Memoizada: só re-renderiza se a ferramenta mudar. */
 export const ToolBadge = memo(function ToolBadge({ ferramenta }: { ferramenta: string }) {
@@ -34,10 +34,11 @@ export const Chip = memo(function Chip({
       accessibilityRole="button"
       accessibilityState={{ selected: active }}
       accessibilityLabel={`Filtro ${label}${active ? ', selecionado' : ''}`}
-      style={[
+      style={({ pressed }) => [
         styles.chip,
         { backgroundColor: colors.surface, borderColor: colors.border },
         active && { backgroundColor: colors.accent, borderColor: colors.accent },
+        pressed && { opacity: 0.8 },
       ]}
     >
       <Text
@@ -57,6 +58,7 @@ export const EmptyState = memo(function EmptyState() {
   const { colors } = useTheme();
   return (
     <View style={styles.empty} accessibilityRole="text">
+      <Text style={[styles.emptyIcon, { color: colors.textDim }]}>🔍</Text>
       <Text style={[styles.emptyTitle, { color: colors.text }]}>
         Nenhum prompt encontrado
       </Text>
@@ -86,9 +88,10 @@ export const Header = memo(function Header() {
         accessibilityLabel={
           mode === 'dark' ? 'Ativar tema claro' : 'Ativar tema escuro'
         }
-        style={[
+        style={({ pressed }) => [
           styles.themeBtn,
           { backgroundColor: colors.surface, borderColor: colors.border },
+          pressed && { opacity: 0.7 },
         ]}
       >
         <Text style={{ fontSize: 18 }}>{mode === 'dark' ? '☀️' : '🌙'}</Text>
@@ -121,17 +124,20 @@ const styles = StyleSheet.create({
   chipText: { fontFamily: fonts.bold, fontSize: 12 },
 
   empty: { alignItems: 'center', paddingTop: 60, paddingHorizontal: 32 },
-  emptyTitle: { fontFamily: fonts.bold, fontSize: 15 },
+  emptyIcon: { fontSize: 40, marginBottom: 12 },
+  emptyTitle: { fontFamily: fonts.bold, fontSize: 16, marginBottom: 6 },
   emptyText: {
     fontFamily: fonts.medium,
     fontSize: 13,
     marginTop: 4,
     textAlign: 'center',
-    lineHeight: 19,
+    lineHeight: 20,
+    color: undefined,
   },
 
   header: {
     paddingHorizontal: 20,
+    paddingTop: 8,
     marginBottom: 16,
     flexDirection: 'row',
     justifyContent: 'space-between',

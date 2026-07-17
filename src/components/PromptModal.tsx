@@ -2,6 +2,7 @@ import React, { memo, useCallback, useEffect, useRef, useState } from 'react';
 import {
   Animated,
   Modal,
+  Platform,
   Pressable,
   ScrollView,
   Share,
@@ -11,8 +12,8 @@ import {
 } from 'react-native';
 import * as Clipboard from 'expo-clipboard';
 import { useTheme } from '../context/ThemeContext';
-import { fonts, radius } from '../theme';
-import { Prompt } from '../types';
+import { fonts, radius } from '../utils/theme';
+import { Prompt } from '../utils/types';
 import { ToolBadge } from './Common';
 
 interface Props {
@@ -55,7 +56,7 @@ export const PromptModal = memo(function PromptModal({ prompt, onClose, onCopied
     } catch {
       setCopyState('error');
     }
-    timer.current = setTimeout(() => setCopyState('idle'), 2000);
+    timer.current = setTimeout(() => setCopyState('idle'), 2500);
   }, [prompt, onCopied, scale]);
 
   const compartilhar = useCallback(async () => {
@@ -63,6 +64,7 @@ export const PromptModal = memo(function PromptModal({ prompt, onClose, onCopied
     try {
       await Share.share({
         message: `${prompt.titulo}\n\n${prompt.prompt}\n\n— via PromptÁrio`,
+        title: prompt.titulo,
       });
     } catch {
       // usuário cancelou ou share indisponível — silencioso por design
@@ -73,7 +75,7 @@ export const PromptModal = memo(function PromptModal({ prompt, onClose, onCopied
     copyState === 'done'
       ? '✓ Copiado!'
       : copyState === 'error'
-        ? 'Falha ao copiar'
+        ? '✗ Falha ao copiar'
         : 'Copiar prompt';
 
   return (
@@ -85,16 +87,21 @@ export const PromptModal = memo(function PromptModal({ prompt, onClose, onCopied
       statusBarTranslucent
     >
       <View style={[styles.backdrop, { backgroundColor: colors.backdrop }]}>
+        <Pressable style={styles.backdropTap} onPress={onClose} />
         <View
           style={[
             styles.sheet,
             { backgroundColor: colors.bg, borderColor: colors.border },
+            Platform.OS === 'android' && styles.sheetAndroid,
           ]}
         >
           {prompt && (
             <>
               <View style={[styles.handle, { backgroundColor: colors.border }]} />
-              <ScrollView showsVerticalScrollIndicator={false}>
+              <ScrollView
+                showsVerticalScrollIndicator={false}
+                keyboardShouldPersistTaps="handled"
+              >
                 <View style={styles.headerRow}>
                   <Text style={[styles.categoria, { color: colors.accent }]}>
                     {prompt.categoria.toUpperCase()}
@@ -126,23 +133,24 @@ export const PromptModal = memo(function PromptModal({ prompt, onClose, onCopied
                     {prompt.prompt}
                   </Text>
                 </View>
-                <View style={{ height: 12 }} />
+                <View style={{ height: 16 }} />
               </ScrollView>
 
               <View
                 accessibilityLiveRegion="polite"
-                accessibilityLabel={copyState === 'done' ? 'Prompt copiado' : undefined}
+                accessibilityLabel={copyState === 'done' ? 'Prompt copiado com sucesso' : undefined}
               >
                 <Animated.View style={{ transform: [{ scale }] }}>
                   <Pressable
                     onPress={copiar}
                     accessibilityRole="button"
                     accessibilityLabel="Copiar prompt para a área de transferência"
-                    style={[
+                    style={({ pressed }) => [
                       styles.copyBtn,
                       { backgroundColor: colors.accent },
                       copyState === 'done' && { backgroundColor: '#2E9124' },
                       copyState === 'error' && { backgroundColor: colors.danger },
+                      pressed && { opacity: 0.85 },
                     ]}
                   >
                     <Text style={[styles.copyText, { color: colors.accentDark }]}>
@@ -157,20 +165,20 @@ export const PromptModal = memo(function PromptModal({ prompt, onClose, onCopied
                   onPress={compartilhar}
                   accessibilityRole="button"
                   accessibilityLabel="Compartilhar prompt"
-                  style={styles.secondaryBtn}
+                  style={({ pressed }) => [styles.secondaryBtn, pressed && { opacity: 0.6 }]}
                 >
                   <Text style={[styles.secondaryText, { color: colors.textDim }]}>
-                    Compartilhar
+                    ⬆ Compartilhar
                   </Text>
                 </Pressable>
                 <Pressable
                   onPress={onClose}
                   accessibilityRole="button"
                   accessibilityLabel="Fechar detalhes do prompt"
-                  style={styles.secondaryBtn}
+                  style={({ pressed }) => [styles.secondaryBtn, pressed && { opacity: 0.6 }]}
                 >
                   <Text style={[styles.secondaryText, { color: colors.textDim }]}>
-                    Fechar
+                    ✕ Fechar
                   </Text>
                 </Pressable>
               </View>
@@ -184,19 +192,23 @@ export const PromptModal = memo(function PromptModal({ prompt, onClose, onCopied
 
 const styles = StyleSheet.create({
   backdrop: { flex: 1, justifyContent: 'flex-end' },
+  backdropTap: { flex: 1 },
   sheet: {
     borderTopLeftRadius: 24,
     borderTopRightRadius: 24,
     borderWidth: 1,
     paddingHorizontal: 20,
     paddingTop: 10,
-    paddingBottom: 24,
-    maxHeight: '88%',
+    paddingBottom: 28,
+    maxHeight: '90%',
+  },
+  sheetAndroid: {
+    paddingBottom: 32,
   },
   handle: { alignSelf: 'center', width: 44, height: 4, borderRadius: 2, marginBottom: 16 },
   headerRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   categoria: { fontFamily: fonts.bold, fontSize: 10, letterSpacing: 1.2 },
-  titulo: { fontFamily: fonts.extraBold, fontSize: 20, marginTop: 8 },
+  titulo: { fontFamily: fonts.extraBold, fontSize: 20, marginTop: 8, lineHeight: 28 },
   label: {
     fontFamily: fonts.bold,
     fontSize: 10,
@@ -204,19 +216,19 @@ const styles = StyleSheet.create({
     marginTop: 18,
     marginBottom: 6,
   },
-  descricao: { fontFamily: fonts.medium, fontSize: 14, lineHeight: 21 },
-  promptBox: { borderRadius: radius.card, borderWidth: 1, padding: 14 },
-  promptText: { fontFamily: fonts.medium, fontSize: 13, lineHeight: 20 },
+  descricao: { fontFamily: fonts.medium, fontSize: 14, lineHeight: 22 },
+  promptBox: { borderRadius: radius.card, borderWidth: 1, padding: 16 },
+  promptText: { fontFamily: fonts.medium, fontSize: 13, lineHeight: 21 },
   copyBtn: {
     borderRadius: radius.button,
     alignItems: 'center',
     paddingVertical: 14,
     marginTop: 14,
-    minHeight: 48,
+    minHeight: 50,
     justifyContent: 'center',
   },
   copyText: { fontFamily: fonts.extraBold, fontSize: 15 },
-  secondaryRow: { flexDirection: 'row', justifyContent: 'center', gap: 24 },
+  secondaryRow: { flexDirection: 'row', justifyContent: 'center', gap: 24, marginTop: 4 },
   secondaryBtn: { paddingVertical: 12, paddingHorizontal: 8, minHeight: 44 },
   secondaryText: { fontFamily: fonts.bold, fontSize: 13 },
 });

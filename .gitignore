@@ -1,0 +1,43 @@
+# Dependências
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Build artifacts
+android/
+ios/
+*.apk
+*.aab
+*.ipa
+
+# Variáveis de ambiente
+.env
+.env.local
+.env.production
+
+# Chaves e credenciais
+*.keystore
+*.jks
+service-account-key.json
+google-services.json
+GoogleService-Info.plist
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo

@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 import { useTheme } from '../context/ThemeContext';
-import { fonts, MIN_TOUCH, radius } from '../theme';
+import { fonts, MIN_TOUCH, radius } from '../utils/theme';
 
 interface Props {
   value: string;

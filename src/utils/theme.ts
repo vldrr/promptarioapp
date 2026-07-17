@@ -18,7 +18,7 @@ export const palettes: Record<ThemeMode, Palette> = {
     accentDark: '#050D02',
     star: '#F5D90A',
     danger: '#EF4444',
-    backdrop: 'rgba(2, 6, 23, 0.7)',
+    backdrop: 'rgba(2, 6, 23, 0.75)',
   },
   light: {
     bg: '#F8FAFC',
@@ -31,7 +31,7 @@ export const palettes: Record<ThemeMode, Palette> = {
     accentDark: '#FFFFFF',
     star: '#B45309', // dourado escurecido p/ contraste sobre claro
     danger: '#DC2626',
-    backdrop: 'rgba(15, 23, 42, 0.45)',
+    backdrop: 'rgba(15, 23, 42, 0.5)',
   },
 };
 
@@ -42,6 +42,9 @@ export const toolColors: Record<string, string> = {
   Gemini: '#4E8CF7',
   Midjourney: '#8B5CF6',
   'Stable Diffusion': '#E11D8F',
+  'DALL-E': '#FF6B35',
+  Copilot: '#0078D4',
+  Perplexity: '#20808D',
   Geral: '#64748B',
 };
 

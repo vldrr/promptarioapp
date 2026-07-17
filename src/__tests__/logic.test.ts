@@ -1,6 +1,6 @@
 import { validatePrompts } from '../utils/validation';
 import { filterPrompts, normalize } from '../utils/filterPrompts';
-import { Prompt } from '../types';
+import { Prompt } from '../utils/types';
 
 const p = (over: Partial<Prompt> = {}): Prompt => ({
   id: 'x-001',

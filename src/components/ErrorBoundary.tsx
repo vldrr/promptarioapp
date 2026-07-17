@@ -1,6 +1,6 @@
 import React from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import { fonts, palettes } from '../theme';
+import { fonts, palettes } from '../utils/theme';
 
 /**
  * Barreira de erro global: qualquer exceção de renderização mostra

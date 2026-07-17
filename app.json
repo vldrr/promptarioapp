@@ -2,20 +2,36 @@
   "expo": {
     "name": "PromptÁrio",
     "slug": "promptario-app",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
     "backgroundColor": "#0F172A",
+    "icon": "./assets/icon.png",
     "splash": {
-      "backgroundColor": "#0F172A",
-      "resizeMode": "contain"
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F172A"
     },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": ["./assets/fonts/Montserrat-Medium.ttf", "./assets/fonts/Montserrat-Bold.ttf", "./assets/fonts/Montserrat-ExtraBold.ttf"]
+        }
+      ]
+    ],
     "android": {
       "package": "com.vldr.promptario",
-      "versionCode": 2,
+      "versionCode": 3,
       "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#0F172A"
-      }
+      },
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
     },
     "platforms": ["android", "ios", "web"]
   }

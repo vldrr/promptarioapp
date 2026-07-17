@@ -1,5 +1,32 @@
 # Changelog
 
+## [1.2.0] — 2026-07-17
+
+### Correções críticas
+- **Estrutura de diretórios corrigida**: todos os arquivos foram reorganizados para `src/` que os imports esperavam. O projeto estava com os arquivos na raiz mas os imports apontavam para `./src/`, causando falha de build imediata.
+- **Imports corrigidos em todos os módulos**: 28 imports atualizados para os caminhos corretos.
+- **Bug de validação corrigido**: `validatePrompts` lançava `TypeError` ao receber `null` na lista — adicionada guarda `item === null || typeof item !== 'object'`.
+- **Tipos Jest instalados**: `@types/jest` adicionado para eliminar erros de TypeScript nos testes.
+- **ESLint corrigido**: `eslint-config-prettier` instalado.
+
+### Melhorias de UX
+- **SafeAreaView** no App.tsx para evitar sobreposição com barra de status em dispositivos com notch.
+- **Feedback de press** melhorado nos chips, botões e cards com `opacity` e `scale` sutis.
+- **Toque no backdrop** do modal agora fecha o modal.
+- **EmptyState** com ícone de lupa para melhor comunicação visual.
+- **Sombras nos cards** com `elevation: 2` para Android.
+- **Teclado** fecha ao arrastar a lista (`keyboardDismissMode="on-drag"`).
+
+### Assets e configuração
+- **Ícone do app** gerado com identidade visual PromptÁrio.
+- **Ícone adaptativo** e **splash screen** gerados.
+- **app.json** atualizado com assets, permissões Android e versionCode 3.
+- **eas.json** atualizado para build e submit na Play Store.
+- **`.gitignore`** criado com exclusões adequadas para Expo.
+- **Cores de ferramentas** expandidas: DALL-E, Copilot e Perplexity.
+
+---
+
 ## [1.1.0] — Refatoração completa
 
 ### Performance
