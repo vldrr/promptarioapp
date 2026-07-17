@@ -1,0 +1,645 @@
+{
+  "_instrucoes": "Banco de prompts do PromptÁrio App. Campos: id, titulo, categoria, ferramenta, descricao, prompt. Categorias viram filtros automaticamente.",
+  "prompts": [
+    {
+      "id": "img-001",
+      "titulo": "Retrato Corporativo Hiper-realista",
+      "categoria": "Retratos IA",
+      "ferramenta": "Midjourney",
+      "descricao": "Cria um retrato profissional ideal para perfis de negócios, sites e materiais de marketing, com foco em realismo e confiança.",
+      "prompt": "CONTEXTO: Um escritório moderno e minimalista, com uma parede de vidro ao fundo exibindo uma vista urbana suavemente desfocada.\n\nOBJETIVO: Capturar um retrato profissional e impactante de [descreva a pessoa], transmitindo confiança e competência, olhar direto para a câmera.\n\nPAPEL: Atue como um fotógrafo profissional especializado em retratos, com experiência em capturar emoção e detalhes.\n\nFORMATO: Fotografia digital de alta resolução, 8K, lente 85mm f/1.4, proporção 3:4, RAW.\n\nTOM: Profissional e elegante, iluminação suave e natural, foco na expressão e emoção, paleta de cores harmoniosa."
+    },
+    {
+      "id": "img-002",
+      "titulo": "Kodak Portra 400 - Retrato Cinematográfico",
+      "categoria": "Retratos IA",
+      "ferramenta": "Midjourney",
+      "descricao": "Cria um retrato cinematográfico com estética de filme Kodak Portra 400, capturando expressões naturais e atmosfera nostálgica.",
+      "prompt": "CONTEXTO: Luz natural de fim de tarde, ambiente [urbano ou interno aconchegante].\n\nOBJETIVO: Criar um retrato de [descreva a pessoa] com a estética do filme Kodak Portra 400: tons de pele quentes, granulação sutil, cores levemente dessaturadas e atmosfera nostálgica.\n\nPAPEL: Atue como um fotógrafo profissional especializado em retratos, com experiência em capturar emoção e detalhes.\n\nFORMATO: Fotografia digital de alta resolução, 8K, lente 85mm f/1.4, proporção 3:4, RAW.\n\nTOM: Profissional e elegante, iluminação suave e natural, foco na expressão e emoção, paleta de cores harmoniosa."
+    },
+    {
+      "id": "img-003",
+      "titulo": "Cena de Ação Cinematográfica Noturna",
+      "categoria": "Cenas & Mundos",
+      "ferramenta": "Midjourney",
+      "descricao": "Gera uma imagem dinâmica e cheia de suspense, como um still de um filme de ação de Hollywood.",
+      "prompt": "CONTEXTO: Uma rua estreita e chuvosa em uma cidade cyberpunk, com reflexos de neon no asfalto molhado.\n\nOBJETIVO: Gerar uma cena de ação noturna com [personagem/situação], tensão palpável, movimento congelado em alta velocidade e composição de blockbuster.\n\nPAPEL: Atue como um diretor de arte e fotógrafo cinematográfico experiente.\n\nFORMATO: Renderização 3D fotorrealista ou fotografia cinematográfica, proporção 16:9, alta resolução.\n\nTOM: Dinâmico e dramático, iluminação cinematográfica, paleta de cores contrastante, atmosfera envolvente."
+    },
+    {
+      "id": "img-004",
+      "titulo": "Retrato de Fantasia Épica",
+      "categoria": "Retratos IA",
+      "ferramenta": "Midjourney",
+      "descricao": "Ideal para capas de livros, arte de jogos ou qualquer projeto que exija um personagem de fantasia imponente e detalhado.",
+      "prompt": "CONTEXTO: No topo de uma montanha nevada, com um céu tempestuoso e dragões voando ao longe.\n\nOBJETIVO: Criar o retrato de corpo inteiro de um(a) [guerreiro(a) nórdico(a)] com armadura detalhada e ornamentada, segurando um machado de batalha. Pintura digital hiper-realista, proporção de pôster 2:3, iluminação naturalista vinda do céu nublado, paleta fria com destaque para o metal, humor estoico e poderoso.\n\nPAPEL: Atue como um fotógrafo profissional especializado em retratos, com experiência em capturar emoção e detalhes.\n\nFORMATO: Fotografia digital de alta resolução, 8K, lente 85mm f/1.4, proporção 3:4, RAW.\n\nTOM: Profissional e elegante, iluminação suave e natural, foco na expressão e emoção, paleta de cores harmoniosa."
+    },
+    {
+      "id": "img-005",
+      "titulo": "Corrigir Exposição e Contraste",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Ajusta a exposição e o contraste de uma foto para melhorar a visibilidade e o impacto visual geral. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: A fotografia anexada, [descreva o problema: subexposta, estourada, sem contraste].\n\nOBJETIVO: Corrigir a exposição e o contraste globais, recuperando detalhes nas sombras e nas altas-luzes, sem alterar cores ou conteúdo da cena.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-006",
+      "titulo": "Conceito de Arquitetura Futurista Sustentável",
+      "categoria": "Cenas & Mundos",
+      "ferramenta": "Midjourney",
+      "descricao": "Para visualizar projetos arquitetônicos inovadores que integram natureza e tecnologia.",
+      "prompt": "CONTEXTO: Uma paisagem urbana densa no ano de 2077.\n\nOBJETIVO: Desenvolver um conceito visual de [edifício/bairro] futurista e sustentável, integrando vegetação, energia limpa e tecnologia, em proporção panorâmica com atmosfera utópica.\n\nPAPEL: Atue como um diretor de arte e fotógrafo cinematográfico experiente.\n\nFORMATO: Renderização 3D fotorrealista ou fotografia cinematográfica, proporção 16:9, alta resolução.\n\nTOM: Dinâmico e dramático, iluminação cinematográfica, paleta de cores contrastante, atmosfera envolvente."
+    },
+    {
+      "id": "img-007",
+      "titulo": "Retrato Emocional em Preto e Branco",
+      "categoria": "Retratos IA",
+      "ferramenta": "Midjourney",
+      "descricao": "Cria um retrato atemporal e impactante, focado puramente na expressão e na emoção do sujeito.",
+      "prompt": "CONTEXTO: Fundo de estúdio completamente preto.\n\nOBJETIVO: Capturar um retrato em preto e branco de [descreva a pessoa], com contraste dramático, foco absoluto nos olhos e na expressão, textura de pele preservada.\n\nPAPEL: Atue como um fotógrafo profissional especializado em retratos, com experiência em capturar emoção e detalhes.\n\nFORMATO: Fotografia digital de alta resolução, 8K, lente 85mm f/1.4, proporção 3:4, RAW.\n\nTOM: Profissional e elegante, iluminação suave e natural, foco na expressão e emoção, paleta de cores harmoniosa."
+    },
+    {
+      "id": "img-008",
+      "titulo": "Vida Selvagem em Ação: O Predador",
+      "categoria": "Cenas & Mundos",
+      "ferramenta": "Midjourney",
+      "descricao": "Captura um momento raro e dinâmico da natureza com detalhes impressionantes.",
+      "prompt": "CONTEXTO: A savana africana durante o nascer do sol dourado.\n\nOBJETIVO: Criar a imagem de um [predador, ex: leopardo] no exato momento da caçada, músculos em tensão, poeira suspensa, teleobjetiva com fundo comprimido e desfocado.\n\nPAPEL: Atue como um diretor de arte e fotógrafo cinematográfico experiente.\n\nFORMATO: Renderização 3D fotorrealista ou fotografia cinematográfica, proporção 16:9, alta resolução.\n\nTOM: Dinâmico e dramático, iluminação cinematográfica, paleta de cores contrastante, atmosfera envolvente."
+    },
+    {
+      "id": "img-009",
+      "titulo": "Cena Urbana Noturna com Light Trails",
+      "categoria": "Cenas & Mundos",
+      "ferramenta": "Midjourney",
+      "descricao": "Gera uma imagem vibrante de uma cidade à noite, usando longa exposição para criar rastros de luz.",
+      "prompt": "CONTEXTO: Um viaduto com vista para uma avenida movimentada em [Tóquio].\n\nOBJETIVO: Gerar uma cena noturna de longa exposição com rastros de luz vermelhos e brancos dos carros cortando a avenida, prédios iluminados e céu azul profundo.\n\nPAPEL: Atue como um diretor de arte e fotógrafo cinematográfico experiente.\n\nFORMATO: Renderização 3D fotorrealista ou fotografia cinematográfica, proporção 16:9, alta resolução.\n\nTOM: Dinâmico e dramático, iluminação cinematográfica, paleta de cores contrastante, atmosfera envolvente."
+    },
+    {
+      "id": "img-010",
+      "titulo": "Retrato Editorial Cinematográfico",
+      "categoria": "Retratos IA",
+      "ferramenta": "Midjourney",
+      "descricao": "Cria um retrato editorial cinematográfico com iluminação profissional e composição minimalista.",
+      "prompt": "CONTEXTO: Estúdio com fundo neutro [cinza ou colorido] e iluminação de recorte.\n\nOBJETIVO: Capturar um retrato editorial de [descreva a pessoa] com composição minimalista, iluminação lateral dramática e estética de capa de revista.\n\nPAPEL: Atue como um fotógrafo profissional especializado em retratos, com experiência em capturar emoção e detalhes.\n\nFORMATO: Fotografia digital de alta resolução, 8K, lente 85mm f/1.4, proporção 3:4, RAW.\n\nTOM: Profissional e elegante, iluminação suave e natural, foco na expressão e emoção, paleta de cores harmoniosa."
+    },
+    {
+      "id": "img-011",
+      "titulo": "Retrato de Atleta em Movimento Explosivo",
+      "categoria": "Retratos IA",
+      "ferramenta": "Midjourney",
+      "descricao": "Captura a potência e a dedicação de um atleta no auge de sua performance.",
+      "prompt": "CONTEXTO: Uma quadra de basquete profissional, com as luzes do estádio criando um brilho dramático.\n\nOBJETIVO: Capturar um(a) [atleta e esporte] em movimento explosivo, suor visível, músculos definidos, congelamento de alta velocidade e partículas no ar.\n\nPAPEL: Atue como um fotógrafo profissional especializado em retratos, com experiência em capturar emoção e detalhes.\n\nFORMATO: Fotografia digital de alta resolução, 8K, lente 85mm f/1.4, proporção 3:4, RAW.\n\nTOM: Profissional e elegante, iluminação suave e natural, foco na expressão e emoção, paleta de cores harmoniosa."
+    },
+    {
+      "id": "img-012",
+      "titulo": "Retrato Fine-Art com Estilo Mafia 1900",
+      "categoria": "Retratos IA",
+      "ferramenta": "Midjourney",
+      "descricao": "Cria um retrato fine-art inspirado em técnicas de pintura clássica com estilo máfia dos anos 1900.",
+      "prompt": "CONTEXTO: Interior escuro de época, luz baixa de abajur, fumaça sutil no ar.\n\nOBJETIVO: Criar um retrato fine-art de [descreva a pessoa] em traje dos anos 1900 estilo máfia — terno risca de giz, chapéu fedora — com iluminação chiaroscuro inspirada em pintura clássica.\n\nPAPEL: Atue como um fotógrafo profissional especializado em retratos, com experiência em capturar emoção e detalhes.\n\nFORMATO: Fotografia digital de alta resolução, 8K, lente 85mm f/1.4, proporção 3:4, RAW.\n\nTOM: Profissional e elegante, iluminação suave e natural, foco na expressão e emoção, paleta de cores harmoniosa."
+    },
+    {
+      "id": "img-013",
+      "titulo": "Fotografia de Rua Estilo Vintage (Anos 70)",
+      "categoria": "Cenas & Mundos",
+      "ferramenta": "Midjourney",
+      "descricao": "Recria a estética e a atmosfera da fotografia de rua de uma era passada.",
+      "prompt": "CONTEXTO: Uma esquina movimentada de [Nova York] em um dia de verão de 1975.\n\nOBJETIVO: Criar uma fotografia de rua com estética dos anos 70: cores desbotadas, granulação de filme, carros e figurinos de época, luz dura de verão.\n\nPAPEL: Atue como um fotógrafo profissional premiado, especialista em composição e iluminação.\n\nFORMATO: Fotografia digital profissional, alta resolução, iluminação cuidadosamente planejada.\n\nTOM: Artístico e impactante, cores bem trabalhadas, atmosfera envolvente."
+    },
+    {
+      "id": "img-014",
+      "titulo": "Ilustração Infantil para Livro de Histórias",
+      "categoria": "Ilustração",
+      "ferramenta": "Midjourney",
+      "descricao": "Gera uma cena encantadora e amigável, pronta para ilustrar um livro infantil.",
+      "prompt": "CONTEXTO: Uma floresta mágica e ensolarada.\n\nOBJETIVO: Criar uma ilustração infantil de [personagem/cena], com traço suave, cores alegres, expressões amigáveis e atmosfera acolhedora de livro de histórias.\n\nPAPEL: Atue como um ilustrador artístico profissional com estilo único e detalhado.\n\nFORMATO: Ilustração digital, alta resolução, cores vibrantes, estilo artístico refinado.\n\nTOM: Artístico e criativo, cores expressivas, estilo único, atmosfera envolvente e cativante."
+    },
+    {
+      "id": "img-015",
+      "titulo": "Retrato Editorial de Moda - Power Suit",
+      "categoria": "Retratos IA",
+      "ferramenta": "Midjourney",
+      "descricao": "Cria um retrato editorial de alta moda com mulher usando power suit preto elegante.",
+      "prompt": "CONTEXTO: Estúdio minimalista com fundo neutro e iluminação de moda.\n\nOBJETIVO: Capturar um retrato editorial de alta moda: mulher em power suit preto elegante, pose confiante, composição de revista de moda e iluminação impecável.\n\nPAPEL: Atue como um fotógrafo profissional especializado em retratos, com experiência em capturar emoção e detalhes.\n\nFORMATO: Fotografia digital de alta resolução, 8K, lente 85mm f/1.4, proporção 3:4, RAW.\n\nTOM: Profissional e elegante, iluminação suave e natural, foco na expressão e emoção, paleta de cores harmoniosa."
+    },
+    {
+      "id": "img-016",
+      "titulo": "Cena de Ficção Científica Interior de Nave",
+      "categoria": "Cenas & Mundos",
+      "ferramenta": "Midjourney",
+      "descricao": "Desenvolve o ambiente interno de uma nave, ideal para cenários de filmes, jogos ou arte conceitual.",
+      "prompt": "CONTEXTO: A ponte de comando de uma nave espacial de exploração interestelar.\n\nOBJETIVO: Gerar o interior detalhado da nave: painéis holográficos, iluminação fria com acentos, janela panorâmica para o espaço profundo, atmosfera de sci-fi realista.\n\nPAPEL: Atue como um diretor de arte e fotógrafo cinematográfico experiente.\n\nFORMATO: Renderização 3D fotorrealista ou fotografia cinematográfica, proporção 16:9, alta resolução.\n\nTOM: Dinâmico e dramático, iluminação cinematográfica, paleta de cores contrastante, atmosfera envolvente."
+    },
+    {
+      "id": "img-017",
+      "titulo": "Retrato de Moda Avant-Garde",
+      "categoria": "Retratos IA",
+      "ferramenta": "Midjourney",
+      "descricao": "Cria uma imagem de moda ousada e artística, focada em um conceito e não apenas na roupa.",
+      "prompt": "CONTEXTO: Um ambiente industrial abandonado, com paredes de concreto descascadas e canos expostos.\n\nOBJETIVO: Apresentar uma [modelo com maquiagem geométrica e cabelo escultural] vestindo alta-costura [ex: vestido de espelhos quebrados], no estilo de fotógrafos de vanguarda como Nick Knight, com iluminação dura, sombras nítidas e paleta monocromática com um ponto de cor forte.\n\nPAPEL: Atue como um fotógrafo profissional especializado em retratos, com experiência em capturar emoção e detalhes.\n\nFORMATO: Fotografia digital de alta resolução, 8K, lente 85mm f/1.4, proporção 3:4, RAW.\n\nTOM: Profissional e elegante, iluminação suave e natural, foco na expressão e emoção, paleta de cores harmoniosa."
+    },
+    {
+      "id": "img-018",
+      "titulo": "Remover Ruído e Grain de Foto",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Remove ruído digital e grain de fotos tiradas em alta ISO, mantendo a nitidez e os detalhes. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: A fotografia anexada, tirada em [alta ISO/pouca luz], com ruído visível.\n\nOBJETIVO: Remover o ruído digital e a granulação preservando bordas, texturas finas e nitidez — sem efeito 'pele de plástico'.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-019",
+      "titulo": "Personagem de Videogame Estilo Cyberpunk",
+      "categoria": "Cenas & Mundos",
+      "ferramenta": "Midjourney",
+      "descricao": "Cria o design de um personagem pronto para um jogo de RPG de ação cyberpunk.",
+      "prompt": "CONTEXTO: Em frente a uma barraca de noodles de neon em um beco chuvoso de Neo-Kyoto.\n\nOBJETIVO: Criar o design completo de um personagem cyberpunk [descreva]: implantes visíveis, roupas tech-wear, paleta neon, pose de apresentação de personagem AAA.\n\nPAPEL: Atue como um diretor de arte e fotógrafo cinematográfico experiente.\n\nFORMATO: Renderização 3D fotorrealista ou fotografia cinematográfica, proporção 16:9, alta resolução.\n\nTOM: Dinâmico e dramático, iluminação cinematográfica, paleta de cores contrastante, atmosfera envolvente."
+    },
+    {
+      "id": "img-020",
+      "titulo": "Natureza Morta no Estilo dos Mestres Holandeses",
+      "categoria": "Cenas & Mundos",
+      "ferramenta": "Midjourney",
+      "descricao": "Recria a estética da pintura a óleo clássica com um arranjo de objetos simbólicos.",
+      "prompt": "CONTEXTO: Uma mesa de madeira escura em uma sala pouco iluminada, com luz vindo de uma única janela à esquerda.\n\nOBJETIVO: Compor uma natureza morta com [objetos simbólicos: frutas, flores, taça, livro], no estilo dos mestres holandeses do século XVII, luz de janela única e fundo escuro profundo.\n\nPAPEL: Atue como um diretor de arte e fotógrafo cinematográfico experiente.\n\nFORMATO: Renderização 3D fotorrealista ou fotografia cinematográfica, proporção 16:9, alta resolução.\n\nTOM: Dinâmico e dramático, iluminação cinematográfica, paleta de cores contrastante, atmosfera envolvente."
+    },
+    {
+      "id": "img-021",
+      "titulo": "Correção Sutil de Sorriso",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Transforma uma expressão neutra ou um sorriso tímido em um sorriso mais aberto e confiante, de forma natural. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: O rosto existente na fotografia, com a área da boca e bochechas levemente mascarada.\n\nOBJETIVO: Ajustar a expressão para um sorriso [aberto e confiante], preservando identidade, dentes naturais e a musculatura coerente do rosto.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-022",
+      "titulo": "Poster Colorido - Fogo e Gelo",
+      "categoria": "Cenas & Mundos",
+      "ferramenta": "Midjourney",
+      "descricao": "Cria um poster colorido e dramático com contraste de fogo e gelo.",
+      "prompt": "CONTEXTO: Composição dividida: metade em chamas quentes, metade em gelo azul.\n\nOBJETIVO: Criar um pôster dramático de [tema/personagem] com o contraste visual fogo vs. gelo, partículas voando e tipografia de espaço reservada no topo.\n\nPAPEL: Atue como um diretor de arte e fotógrafo cinematográfico experiente.\n\nFORMATO: Renderização 3D fotorrealista ou fotografia cinematográfica, proporção 16:9, alta resolução.\n\nTOM: Dinâmico e dramático, iluminação cinematográfica, paleta de cores contrastante, atmosfera envolvente."
+    },
+    {
+      "id": "img-023",
+      "titulo": "Mudar Cor e Acabamento do Batom",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Altera a cor e a textura do batom ou adiciona batom a lábios sem maquiagem, mantendo o realismo. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: O rosto da foto, com apenas os lábios mascarados.\n\nOBJETIVO: Alterar o batom para [cor desejada] com acabamento [matte/glossy], preservando textura natural dos lábios, reflexos de luz e bordas precisas.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-024",
+      "titulo": "Remover Sinais de Cansaço (Olheiras)",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Suaviza olheiras e bolsas sob os olhos para um visual mais descansado e rejuvenescido, sem perder a naturalidade. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: O rosto na imagem, com a área abaixo dos olhos cuidadosamente mascarada.\n\nOBJETIVO: Suavizar as [olheiras escuras e pequenas bolsas], igualando tom e textura ao restante da pele. Não remover completamente as linhas finas, para manter o realismo.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-025",
+      "titulo": "Ajustar Balanço de Branco e Temperatura de Cor",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Corrige o balanço de branco e a temperatura de cor para eliminar dominantes de cor indesejadas. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: A fotografia anexada, com dominante de cor [amarelada/azulada/esverdeada].\n\nOBJETIVO: Neutralizar a dominante de cor, ajustando o balanço de branco para tons de pele e brancos verdadeiros, mantendo a atmosfera da cena.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-026",
+      "titulo": "Aplicar Iluminação Rembrandt no Rosto",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Altera o esquema de luz de um retrato existente para o clássico e dramático estilo Rembrandt. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Um retrato existente, com o rosto inteiro mascarado para reiluminação.\n\nOBJETIVO: Reiluminar o rosto no estilo Rembrandt: luz principal a 45°, triângulo de luz característico na bochecha oposta, sombras suaves e fundo escurecido.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-027",
+      "titulo": "Por do Sol - Composição Cinematográfica",
+      "categoria": "Cenas & Mundos",
+      "ferramenta": "Midjourney",
+      "descricao": "Cria uma cena cinematográfica surrealista com pôr do sol sobre o oceano.",
+      "prompt": "CONTEXTO: Oceano aberto na hora dourada, céu em gradiente laranja-violeta.\n\nOBJETIVO: Criar uma composição cinematográfica surrealista de pôr do sol sobre o oceano com [elemento surreal: sol gigante, escadas na água, silhueta], proporção widescreen.\n\nPAPEL: Atue como um diretor de arte e fotógrafo cinematográfico experiente.\n\nFORMATO: Renderização 3D fotorrealista ou fotografia cinematográfica, proporção 16:9, alta resolução.\n\nTOM: Dinâmico e dramático, iluminação cinematográfica, paleta de cores contrastante, atmosfera envolvente."
+    },
+    {
+      "id": "img-028",
+      "titulo": "Rejuvenescimento Facial Sutil",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Reduz os sinais de envelhecimento de forma natural, sem criar um visual 'plástico' ou falso. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: O rosto na foto, com áreas específicas de rugas (testa, ao redor dos olhos, boca) mascaradas.\n\nOBJETIVO: Suavizar rugas e linhas de expressão em cerca de 40%, mantendo poros, textura de pele e o caráter natural do rosto.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-029",
+      "titulo": "Adicionar Sardas Naturais",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Cria sardas realistas no rosto, com variações de tamanho, cor e densidade. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: O rosto na foto, com a área do nariz e bochechas mascarada.\n\nOBJETIVO: Adicionar [sardas naturais e espalhadas] sobre o nariz e a parte superior das bochechas, com variações de cor (marrom-claro a avermelhado) e tamanho, seguindo a curvatura do rosto — visual 'beijado pelo sol', com as sardas na pele, não sobre ela.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-030",
+      "titulo": "Aumentar Saturação e Vibrância Seletiva",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Aumenta a saturação e vibrância de cores específicas ou de toda a imagem para maior impacto visual. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: A fotografia anexada, com cores [apagadas ou específicas a realçar].\n\nOBJETIVO: Aumentar a vibrância global e saturar seletivamente [cores-alvo], protegendo tons de pele e evitando estouro de canais.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-031",
+      "titulo": "Adicionar ou Intensificar Barba por Fazer",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Cria ou adensa uma barba curta e por fazer, com aparência realista. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: O rosto masculino na foto, com a área do queixo, mandíbula e bigode mascarada.\n\nOBJETIVO: Adicionar/adensar uma barba por fazer com densidade [leve/média], fios individuais visíveis, seguindo o padrão natural de crescimento e a iluminação da foto.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-032",
+      "titulo": "Gulliver - Homem Gigante na Praia",
+      "categoria": "Cenas & Mundos",
+      "ferramenta": "Midjourney",
+      "descricao": "Cria uma cena surrealista cinematográfica com um homem gigante dormindo na praia.",
+      "prompt": "CONTEXTO: Praia extensa ao amanhecer, pessoas pequenas ao redor observando.\n\nOBJETIVO: Criar a cena surrealista de um homem gigante dormindo na areia estilo Gulliver, escala convincente, sombras longas e multidão minúscula ao redor.\n\nPAPEL: Atue como um diretor de arte e fotógrafo cinematográfico experiente.\n\nFORMATO: Renderização 3D fotorrealista ou fotografia cinematográfica, proporção 16:9, alta resolução.\n\nTOM: Dinâmico e dramático, iluminação cinematográfica, paleta de cores contrastante, atmosfera envolvente."
+    },
+    {
+      "id": "img-033",
+      "titulo": "Ajuste de Contorno com Luz e Sombra",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Realça a estrutura facial (maçãs do rosto, mandíbula) usando apenas técnicas de iluminação, sem alterar a forma. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: O rosto na foto, com as laterais do rosto, abaixo das maçãs do rosto e ao longo da mandíbula mascaradas.\n\nOBJETIVO: Aplicar contorno por luz e sombra (dodge & burn) realçando maçãs do rosto e mandíbula, sem deformar nenhuma estrutura facial.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-034",
+      "titulo": "Simular Pele Molhada ou com Suor",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Adiciona um efeito de umidade ou suor à pele, útil para cenas de esporte, dança ou para dar um ar mais dramático. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: O rosto na foto, com a testa, têmporas e bochechas mascaradas.\n\nOBJETIVO: Adicionar gotículas e brilho de suor realistas, com reflexos especulares coerentes com a direção da luz existente.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-035",
+      "titulo": "Reparo de Pele (Remover Acne e Manchas)",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Limpa a pele de imperfeições como acne, cicatrizes ou manchas, preservando a textura natural da pele. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: O rosto na foto, com as áreas específicas contendo [acne, manchas ou cicatrizes] mascaradas.\n\nOBJETIVO: Remover as imperfeições mantendo poros e microtextura da pele — resultado natural, sem aparência de filtro.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-036",
+      "titulo": "Expansão de Cenário com Outpainting",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Amplia a imagem existente, criando um ambiente mais vasto e imersivo que se integra perfeitamente ao original. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Uma fotografia de um [sujeito em um campo aberto], com o horizonte cortado.\n\nOBJETIVO: Expandir a imagem para [dobrar sua largura], preenchendo as laterais com a continuação do cenário, adicionando [árvores distantes e céu com nuvens esparsas] em harmonia com a iluminação, sem costuras visíveis e mantendo perspectiva e profundidade de campo.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-037",
+      "titulo": "Aplicar Nitidez e Detalhe Seletivo",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Aumenta a nitidez e o detalhe de áreas específicas da imagem, destacando texturas e contornos. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: A fotografia anexada, com [área-alvo: olhos, produto, textura] mascarada.\n\nOBJETIVO: Aplicar nitidez e microcontraste apenas na área mascarada, destacando texturas sem criar halos ou ruído.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-038",
+      "titulo": "Adicionar Elementos Climáticos (Chuva)",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Integra efeitos climáticos realistas ao ambiente, como chuva, neve ou neblina, para criar uma atmosfera específica. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Uma rua urbana à noite, com o [sujeito caminhando sob um poste de luz].\n\nOBJETIVO: Adicionar [chuva] realista: fios de chuva visíveis contra a luz, asfalto molhado com reflexos, respingos sutis e atmosfera úmida coerente.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-039",
+      "titulo": "Monocromática - Colagem de Fotos Instantâneas",
+      "categoria": "Efeitos & Estilos",
+      "ferramenta": "Gemini",
+      "descricao": "Cria um retrato monocromático artístico com colagem de fotos instantâneas.",
+      "prompt": "CONTEXTO: Conjunto de fotos instantâneas do mesmo sujeito em poses diferentes.\n\nOBJETIVO: Criar uma colagem artística monocromática em grade de fotos instantâneas, variações sutis de pose entre quadros e estética analógica.\n\nPAPEL: Atue como um fotógrafo profissional premiado, especialista em composição e iluminação.\n\nFORMATO: Fotografia digital profissional, alta resolução, iluminação cuidadosamente planejada.\n\nTOM: Artístico e impactante, cores bem trabalhadas, atmosfera envolvente."
+    },
+    {
+      "id": "img-040",
+      "titulo": "Reiluminação de Cena para Pôr do Sol Dourado",
+      "categoria": "Efeitos & Estilos",
+      "ferramenta": "Gemini",
+      "descricao": "Altera a iluminação de uma cena para simular a hora mágica do pôr do sol. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Uma fotografia de uma [praia com o sujeito olhando para o mar], tirada ao meio-dia com luz forte.\n\nOBJETIVO: Reiluminar a cena para a golden hour: luz baixa e quente, sombras longas, céu dourado e contraluz suave no sujeito.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-041",
+      "titulo": "Jardim de Inverno - Retrato em Campo de Flores",
+      "categoria": "Retratos IA",
+      "ferramenta": "Midjourney",
+      "descricao": "Cria um retrato cinematográfico de perfil com mulher em campo de flores vermelhas.",
+      "prompt": "CONTEXTO: Campo extenso de flores vermelhas sob céu suave de inverno.\n\nOBJETIVO: Capturar um retrato cinematográfico de perfil de uma mulher em campo de flores vermelhas, vento leve no cabelo, atmosfera poética e melancólica.\n\nPAPEL: Atue como um fotógrafo profissional especializado em retratos, com experiência em capturar emoção e detalhes.\n\nFORMATO: Fotografia digital de alta resolução, 8K, lente 85mm f/1.4, proporção 3:4, RAW.\n\nTOM: Profissional e elegante, iluminação suave e natural, foco na expressão e emoção, paleta de cores harmoniosa."
+    },
+    {
+      "id": "img-042",
+      "titulo": "Criar Reflexos Realistas em Água",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Adiciona ou melhora reflexos em superfícies de água, como lagos, poças ou mar. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Uma paisagem com um [lago de águas paradas] e montanhas ao fundo, mas sem reflexos claros.\n\nOBJETIVO: Criar reflexos espelhados realistas na água, com leve distorção de superfície e cores coerentes com o céu e a paisagem.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-043",
+      "titulo": "Desfocar o Fundo (Efeito Bokeh)",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Simula o uso de uma lente com grande abertura para criar um fundo suavemente desfocado, destacando o sujeito. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Um retrato de rua onde tanto o [sujeito quanto o fundo estão em foco].\n\nOBJETIVO: Desfocar progressivamente o fundo simulando lente f/1.4, com bokeh circular nas luzes e transição natural nas bordas do sujeito (cabelo incluso).\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-044",
+      "titulo": "Integrar Elemento Arquitetônico em Paisagem",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Adiciona uma estrutura ou edifício a uma paisagem natural de forma crível. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Uma paisagem de [colinas verdes e vazias].\n\nOBJETIVO: Integrar [estrutura: casa moderna, torre, ponte] na paisagem com perspectiva, escala, sombras e iluminação perfeitamente coerentes.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-045",
+      "titulo": "Limpar Fundo (Remover Pessoas e Distrações)",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Remove elementos indesejados do fundo, como outros turistas, lixo ou objetos que distraem, para limpar a composição. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Uma fotografia de um [sujeito em um ponto turístico famoso], mas com muitas outras pessoas ao fundo.\n\nOBJETIVO: Remover todas as pessoas e distrações do fundo, reconstruindo o cenário atrás delas de forma invisível e mantendo o sujeito intocado.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-046",
+      "titulo": "Trocar Cor de Peça de Roupa",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Altera a cor de uma camiseta, jaqueta ou qualquer peça de vestuário, mantendo todas as dobras, sombras e texturas originais. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Um sujeito vestindo uma [camiseta azul], com a peça de roupa completamente mascarada.\n\nOBJETIVO: Alterar a cor da peça para [cor desejada], preservando dobras, sombras, textura do tecido e variações de iluminação.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-047",
+      "titulo": "Mudar Estilo da Roupa (Casual para Formal)",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Transforma uma peça de roupa casual em uma formal, como uma camiseta em uma camisa social, ajustando o caimento e o material. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Um sujeito vestindo uma [camiseta preta simples], com a área do torso mascarada.\n\nOBJETIVO: Substituir a peça por uma [camisa social], ajustando caimento, colarinho, botões e material do tecido à pose e iluminação existentes.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-048",
+      "titulo": "Desenho Realista - Graphic Novel em Perfil",
+      "categoria": "Ilustração",
+      "ferramenta": "Midjourney",
+      "descricao": "Cria um desenho realista em estilo graphic novel com precisão de identidade facial.",
+      "prompt": "CONTEXTO: Fundo gráfico limpo com hachuras sutis.\n\nOBJETIVO: Criar um retrato de perfil em estilo graphic novel realista: traço de tinta preciso, hachuras, sombras chapadas e fidelidade à identidade facial de [descreva/anexe referência].\n\nPAPEL: Atue como um ilustrador artístico profissional com estilo único e detalhado.\n\nFORMATO: Ilustração digital, alta resolução, cores vibrantes, estilo artístico refinado.\n\nTOM: Artístico e criativo, cores expressivas, estilo único, atmosfera envolvente e cativante."
+    },
+    {
+      "id": "img-049",
+      "titulo": "Remover Objeto da Mão do Sujeito",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Apaga um objeto que o sujeito está segurando e recria a mão em uma posição natural. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Um sujeito segurando uma [xícara de café], com a mão e a xícara mascaradas.\n\nOBJETIVO: Remover o objeto e reconstruir a mão em posição relaxada e anatomicamente correta, com pele e iluminação coerentes.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-050",
+      "titulo": "Adicionar Tatuagem Realista",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Aplica uma tatuagem à pele, garantindo que ela se curve e se adapte ao contorno do corpo e à textura da pele. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: O [antebraço] nu de uma pessoa, com a área onde a tatuagem será aplicada mascarada.\n\nOBJETIVO: Adicionar uma [tatuagem estilo blackwork de um lobo geométrico] seguindo a curvatura do músculo, com a tinta parecendo estar sob a primeira camada da pele, opacidade levemente reduzida e bordas que se deformam realisticamente com a pose.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-051",
+      "titulo": "Foto Porta Retrato - Retrato Dourado",
+      "categoria": "Retratos IA",
+      "ferramenta": "Midjourney",
+      "descricao": "Cria um retrato cinematográfico feminino com iluminação dourada e atmosfera poética.",
+      "prompt": "CONTEXTO: Luz dourada de fim de tarde entrando por uma janela.\n\nOBJETIVO: Capturar um retrato feminino com iluminação dourada envolvente, partículas de poeira na luz, atmosfera poética e intimista, enquadramento de porta-retrato.\n\nPAPEL: Atue como um fotógrafo profissional especializado em retratos, com experiência em capturar emoção e detalhes.\n\nFORMATO: Fotografia digital de alta resolução, 8K, lente 85mm f/1.4, proporção 3:4, RAW.\n\nTOM: Profissional e elegante, iluminação suave e natural, foco na expressão e emoção, paleta de cores harmoniosa."
+    },
+    {
+      "id": "img-052",
+      "titulo": "Adicionar um Chapéu ou Boné",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Coloca um chapéu na cabeça do sujeito, ajustando o cabelo e criando sombras realistas no rosto. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Um retrato de um [sujeito ao ar livre], com a cabeça e o cabelo mascarados.\n\nOBJETIVO: Adicionar um [chapéu/boné descrito], ajustando o cabelo comprimido sob a peça e projetando sombra realista na testa conforme a luz da cena.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-053",
+      "titulo": "Mulher Tec - Guerreira Boêmia Futurista",
+      "categoria": "Retratos IA",
+      "ferramenta": "Midjourney",
+      "descricao": "Cria um retrato de mulher guerreira boêmia com fusão tribal e futurista.",
+      "prompt": "CONTEXTO: Cenário desértico futurista ao entardecer.\n\nOBJETIVO: Criar o retrato de uma guerreira que funde estética tribal e futurista: adornos artesanais + tecnologia vestível, olhar forte, paleta terrosa com acentos metálicos.\n\nPAPEL: Atue como um fotógrafo profissional especializado em retratos, com experiência em capturar emoção e detalhes.\n\nFORMATO: Fotografia digital de alta resolução, 8K, lente 85mm f/1.4, proporção 3:4, RAW.\n\nTOM: Profissional e elegante, iluminação suave e natural, foco na expressão e emoção, paleta de cores harmoniosa."
+    },
+    {
+      "id": "img-054",
+      "titulo": "Adicionar um Objeto Complexo à Cena (Drone Voando)",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Insere um objeto que não estava presente originalmente, garantindo perspectiva, iluminação e foco corretos. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Uma paisagem de montanha com um [caminhante olhando para o horizonte].\n\nOBJETIVO: Inserir um [drone voando] na cena com perspectiva, escala, direção de luz, sombra projetada e nível de foco perfeitamente integrados.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-055",
+      "titulo": "Transformar Roupa de Verão em Inverno",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Adiciona camadas de roupa para adaptar um traje a uma estação mais fria. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Um sujeito vestindo uma [camiseta de manga curta] em um cenário urbano, com o torso e os braços mascarados.\n\nOBJETIVO: Adicionar um [casaco de inverno] sobre o traje, com volume, textura de tecido e caimento naturais à pose, mantendo rosto e fundo intactos.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-056",
+      "titulo": "Mudar Material de um Objeto (Madeira para Metal)",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Altera a propriedade de material de um objeto, afetando sua textura, reflexos e peso visual. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Uma [mesa de madeira] em uma sala de jantar, com a mesa mascarada.\n\nOBJETIVO: Transformar o material do objeto de [madeira] para [metal escovado], recalculando reflexos, textura e interação com a luz do ambiente.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-057",
+      "titulo": "Adicionar Vapor a uma Xícara de Café",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Cria um efeito de vapor realista subindo de uma bebida quente, adicionando vida e calor à imagem. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Uma [xícara de café] vista de cima em uma mesa.\n\nOBJETIVO: Adicionar vapor sutil e realista subindo da bebida, com volutas translúcidas visíveis contra o fundo e iluminação coerente.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-058",
+      "titulo": "Quebrar um Objeto (Vaso de Vidro)",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Cria o efeito de um objeto se quebrando, com cacos e fragmentos realistas. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Um [vaso de vidro transparente] intacto sobre uma mesa.\n\nOBJETIVO: Mostrar o vaso no exato momento de [se estilhaçar], com cacos voando a partir do ponto de impacto, reflexos e refrações corretas no vidro e motion blur nos fragmentos mais rápidos — efeito dinâmico congelado em alta velocidade.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-059",
+      "titulo": "Corrigir Distorção de Lente e Perspectiva",
+      "categoria": "Edição de Foto",
+      "ferramenta": "Gemini",
+      "descricao": "Corrige distorções de lente (barrel, pincushion) e problemas de perspectiva para alinhar linhas e proporcionar uma imagem mais reta. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: A fotografia anexada, com [linhas curvadas/perspectiva inclinada, ex: prédios tombando].\n\nOBJETIVO: Corrigir a distorção de lente e endireitar a perspectiva, deixando linhas verticais e horizontais retas sem esticar o sujeito.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-060",
+      "titulo": "Cadeira Real - Homem no Trono",
+      "categoria": "Retratos IA",
+      "ferramenta": "Midjourney",
+      "descricao": "Cria um retrato ultra-realista de homem sentado em trono real com tigre.",
+      "prompt": "CONTEXTO: Salão majestoso de palácio, luz dramática lateral.\n\nOBJETIVO: Criar um retrato ultra-realista de um homem sentado em um trono real ornamentado, com um tigre deitado ao lado, postura de poder, detalhes ricos em tecidos e dourados.\n\nPAPEL: Atue como um fotógrafo profissional especializado em retratos, com experiência em capturar emoção e detalhes.\n\nFORMATO: Fotografia digital de alta resolução, 8K, lente 85mm f/1.4, proporção 3:4, RAW.\n\nTOM: Profissional e elegante, iluminação suave e natural, foco na expressão e emoção, paleta de cores harmoniosa."
+    },
+    {
+      "id": "img-061",
+      "titulo": "Efeito de Lente Anamórfica com Lens Flare",
+      "categoria": "Efeitos & Estilos",
+      "ferramenta": "Gemini",
+      "descricao": "Simula o visual cinematográfico de uma lente anamórfica, caracterizado por um bokeh oval e flares horizontais. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Uma cena noturna com [muitas fontes de luz pontuais, como postes de luz ou faróis de carro].\n\nOBJETIVO: Aplicar o visual anamórfico: flares horizontais azulados nas luzes, bokeh oval e leve compressão cinematográfica do quadro.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-062",
+      "titulo": "Granulação de Filme Analógico (Kodak Portra 400)",
+      "categoria": "Efeitos & Estilos",
+      "ferramenta": "Gemini",
+      "descricao": "Adiciona uma textura de granulação de filme realista, simulando a estética de um filme fotográfico específico. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Um [retrato com luz natural suave] ou uma [cena de rua diurna].\n\nOBJETIVO: Aplicar granulação e paleta do filme Kodak Portra 400: grão orgânico fino, tons de pele quentes e contraste suave.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-063",
+      "titulo": "Color Grading Estilo \"Teal and Orange\"",
+      "categoria": "Efeitos & Estilos",
+      "ferramenta": "Gemini",
+      "descricao": "Aplica a popular paleta de cores de blockbusters de Hollywood, com tons de pele alaranjados e sombras azul-petróleo. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Qualquer imagem com [pessoas e um ambiente com sombras].\n\nOBJETIVO: Aplicar color grading teal & orange: tons de pele alaranjados, sombras azul-petróleo, contraste cinematográfico equilibrado.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-064",
+      "titulo": "Efeito de Dupla Exposição",
+      "categoria": "Efeitos & Estilos",
+      "ferramenta": "Gemini",
+      "descricao": "Sobrepõe duas imagens diferentes de forma artística para criar uma única composição simbólica. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Uma imagem base, como a [silhueta de um perfil de uma pessoa contra um fundo branco].\n\nOBJETIVO: Criar uma dupla exposição sobrepondo [segunda imagem: floresta, cidade, oceano] dentro da silhueta, com transições suaves e composição simbólica.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-065",
+      "titulo": "Caminhada Praia - Casal Romântico",
+      "categoria": "Retratos IA",
+      "ferramenta": "Midjourney",
+      "descricao": "Cria um retrato cinematográfico de casal na praia ao amanhecer.",
+      "prompt": "CONTEXTO: Praia deserta ao amanhecer, maré baixa refletindo o céu.\n\nOBJETIVO: Capturar um casal caminhando de mãos dadas na beira do mar ao amanhecer, reflexos na areia molhada, atmosfera romântica e cinematográfica.\n\nPAPEL: Atue como um fotógrafo profissional especializado em retratos, com experiência em capturar emoção e detalhes.\n\nFORMATO: Fotografia digital de alta resolução, 8K, lente 85mm f/1.4, proporção 3:4, RAW.\n\nTOM: Profissional e elegante, iluminação suave e natural, foco na expressão e emoção, paleta de cores harmoniosa."
+    },
+    {
+      "id": "img-066",
+      "titulo": "Efeito de Foco Suave (Soft Focus) Glamour",
+      "categoria": "Efeitos & Estilos",
+      "ferramenta": "Gemini",
+      "descricao": "Aplica um brilho etéreo e suave à imagem, especialmente nos realces, para um visual de glamour clássico. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Um [retrato em close-up], especialmente de um rosto feminino.\n\nOBJETIVO: Aplicar soft focus clássico de glamour: brilho etéreo nos realces, difusão suave mantendo os olhos nítidos.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-067",
+      "titulo": "Vinheta Dramática e Sutil",
+      "categoria": "Efeitos & Estilos",
+      "ferramenta": "Gemini",
+      "descricao": "Escurece as bordas da imagem para centralizar a atenção do espectador no sujeito principal. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Qualquer imagem, mas especialmente [retratos ou naturezas-mortas].\n\nOBJETIVO: Aplicar uma vinheta escura sutil e gradual nas bordas, direcionando o olhar ao sujeito sem parecer artificial.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-068",
+      "titulo": "Poster Desenho - Ilustração em Tinta",
+      "categoria": "Ilustração",
+      "ferramenta": "Midjourney",
+      "descricao": "Cria um poster com ilustração em tinta estilo comic book.",
+      "prompt": "CONTEXTO: Composição de pôster com espaço para título.\n\nOBJETIVO: Criar um pôster de [tema/personagem] em ilustração de tinta estilo comic book: traço forte, hachuras, cores chapadas e alto contraste.\n\nPAPEL: Atue como um ilustrador artístico profissional com estilo único e detalhado.\n\nFORMATO: Ilustração digital, alta resolução, cores vibrantes, estilo artístico refinado.\n\nTOM: Artístico e criativo, cores expressivas, estilo único, atmosfera envolvente e cativante."
+    },
+    {
+      "id": "img-069",
+      "titulo": "Estilo de Fotografia Lomography",
+      "categoria": "Efeitos & Estilos",
+      "ferramenta": "Gemini",
+      "descricao": "Emula a estética das câmeras Lomo: cores supersaturadas, vinhetas fortes, distorções e um toque de imprevisibilidade. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Uma [cena de rua espontânea e colorida].\n\nOBJETIVO: Aplicar a estética Lomography: supersaturação, vinheta forte, leve distorção, vazamentos de luz e contraste imprevisível.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-070",
+      "titulo": "Efeito de Câmera de Brinquedo (Holga)",
+      "categoria": "Efeitos & Estilos",
+      "ferramenta": "Gemini",
+      "descricao": "Simula as características de uma câmera de plástico barata, como a Holga, conhecida por suas vinhetas, vazamentos de luz e foco suave. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Uma [paisagem simples ou um retrato casual].\n\nOBJETIVO: Aplicar o visual Holga: vinheta pesada, foco suave no centro caindo nas bordas, vazamentos de luz e cores instáveis.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-071",
+      "titulo": "Sport - Pintura de Esporte Expressiva",
+      "categoria": "Ilustração",
+      "ferramenta": "Midjourney",
+      "descricao": "Cria um poster de esporte com pintura expressiva em estilo palette-knife.",
+      "prompt": "CONTEXTO: Atleta em momento decisivo do [esporte].\n\nOBJETIVO: Criar um pôster esportivo em pintura expressiva estilo palette-knife: pinceladas grossas, respingos de tinta, energia e movimento explosivo.\n\nPAPEL: Atue como um ilustrador artístico profissional com estilo único e detalhado.\n\nFORMATO: Ilustração digital, alta resolução, cores vibrantes, estilo artístico refinado.\n\nTOM: Artístico e criativo, cores expressivas, estilo único, atmosfera envolvente e cativante."
+    },
+    {
+      "id": "img-072",
+      "titulo": "Efeito de Cross-Processing (Processo Cruzado)",
+      "categoria": "Efeitos & Estilos",
+      "ferramenta": "Gemini",
+      "descricao": "Simula a técnica química de revelar um tipo de filme no produto químico de outro, resultando em mudanças de cor dramáticas e alto contraste. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Uma [cena de moda ou um retrato urbano].\n\nOBJETIVO: Aplicar cross-processing: desvios de cor dramáticos (verdes/amarelos nas altas-luzes, azuis nas sombras) e alto contraste.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-073",
+      "titulo": "Efeito Orton (Mistura de Foco e Desfoque)",
+      "categoria": "Efeitos & Estilos",
+      "ferramenta": "Gemini",
+      "descricao": "Cria um brilho sonhador em uma imagem ao sobrepor uma versão nítida com uma versão desfocada e superexposta. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Uma [paisagem de floresta ou um retrato com luz suave].\n\nOBJETIVO: Aplicar o efeito Orton: sobreposição de versão nítida com versão desfocada e superexposta, criando brilho onírico nos realces.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-074",
+      "titulo": "Efeito de Zoom Burst (Explosão de Zoom)",
+      "categoria": "Efeitos & Estilos",
+      "ferramenta": "Gemini",
+      "descricao": "Simula o efeito de dar zoom enquanto o obturador da câmera está aberto, criando linhas de movimento que irradiam do centro. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Uma cena com um [ponto de interesse central claro], como um carro em movimento ou o rosto de uma pessoa.\n\nOBJETIVO: Aplicar zoom burst: linhas de movimento irradiando do centro, mantendo o ponto focal nítido e as bordas em arrasto radial.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-075",
+      "titulo": "Simulação de Daguereótipo (Fotografia Antiga)",
+      "categoria": "Efeitos & Estilos",
+      "ferramenta": "Gemini",
+      "descricao": "Recria a aparência das primeiras fotografias do século XIX, com seus tons metálicos, alta nitidez e imperfeições. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Um [retrato formal e posado] de uma pessoa.\n\nOBJETIVO: Simular um daguereótipo do século XIX: tons metálicos prateados, nitidez central, bordas com imperfeições químicas e placa envelhecida.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-076",
+      "titulo": "Efeito de Panning (Arrasto) para Movimento",
+      "categoria": "Efeitos & Estilos",
+      "ferramenta": "Gemini",
+      "descricao": "Simula a técnica de seguir um objeto em movimento com a câmera, resultando em um sujeito nítido e um fundo com listras de movimento horizontal. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Uma cena com um [objeto se movendo horizontalmente], como um ciclista ou um carro de corrida.\n\nOBJETIVO: Aplicar panning: sujeito nítido e fundo com arrasto de movimento horizontal, transmitindo velocidade real.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-077",
+      "titulo": "Color Grading Estilo Matrix (Verde e Preto)",
+      "categoria": "Efeitos & Estilos",
+      "ferramenta": "Gemini",
+      "descricao": "Aplica a icônica paleta de cores dominada por tons de verde, preto e ciano. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Uma [cena urbana ou de ficção científica], especialmente à noite.\n\nOBJETIVO: Aplicar color grading verde-e-preto estilo sci-fi hacker: dominante verde nas médias, pretos profundos e acentos ciano.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-078",
+      "titulo": "Efeito de Infravermelho Falso (Falsa Cor)",
+      "categoria": "Efeitos & Estilos",
+      "ferramenta": "Gemini",
+      "descricao": "Simula a fotografia infravermelha, onde a folhagem se torna branca ou rosa e os céus ficam escuros, criando um mundo alienígena. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Uma [paisagem ensolarada com muitas árvores, grama e um céu azul claro].\n\nOBJETIVO: Aplicar infravermelho falso: folhagem branca/rosa, céu quase preto, contraste surreal de mundo alienígena.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    },
+    {
+      "id": "img-079",
+      "titulo": "PopArt - Ilustração Pop Art",
+      "categoria": "Ilustração",
+      "ferramenta": "Midjourney",
+      "descricao": "Cria uma ilustração pop art ultra-detalhada com cores saturadas.",
+      "prompt": "CONTEXTO: Composição gráfica ousada com retícula de pontos.\n\nOBJETIVO: Criar uma ilustração pop art de [tema/pessoa]: cores saturadas em blocos, retícula halftone, contornos pretos fortes, estilo Warhol/Lichtenstein.\n\nPAPEL: Atue como um ilustrador artístico profissional com estilo único e detalhado.\n\nFORMATO: Ilustração digital, alta resolução, cores vibrantes, estilo artístico refinado.\n\nTOM: Artístico e criativo, cores expressivas, estilo único, atmosfera envolvente e cativante."
+    },
+    {
+      "id": "img-080",
+      "titulo": "Simulação de Polaroid com Bordas Clássicas",
+      "categoria": "Efeitos & Estilos",
+      "ferramenta": "Gemini",
+      "descricao": "Recria o visual icônico de uma fotografia instantânea Polaroid, incluindo as cores desbotadas e a borda branca característica. 📷 Requer foto anexada.",
+      "prompt": "CONTEXTO: Um [retrato casual, uma foto de festa ou uma natureza morta].\n\nOBJETIVO: Transformar a imagem em uma Polaroid: moldura branca clássica (base maior), cores desbotadas, leve vinheta e textura instantânea.\n\nPAPEL: Atue como um retocador de imagens sênior, especialista em edição fotorrealista com máscaras (inpainting).\n\nFORMATO: Inpainting fotorrealista, preservando 100% da textura, iluminação e identidade da imagem original.\n\nTOM: Natural e realista, a edição deve ser invisível — o resultado precisa parecer a foto original."
+    }
+  ]
+}
